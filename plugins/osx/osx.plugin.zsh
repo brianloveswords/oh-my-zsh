@@ -184,10 +184,9 @@ function itunes() {
 			return 0
 			;;
 		*)
-			print "Unkonwn option: $opt"
+			print "Unknown option: $opt"
 			return 1
 			;;
 	esac
 	osascript -e "tell application \"iTunes\" to $opt"
 }
-
